@@ -3,7 +3,9 @@
 //! Built up incrementally, module by module -- see git history.
 
 pub mod error;
+pub mod memtable;
 pub mod wal;
 
 pub use error::{Result, StorageError};
+pub use memtable::MemValue;
 pub use wal::{WalRecord, WriteAheadLog};
