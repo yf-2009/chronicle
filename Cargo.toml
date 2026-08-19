@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+# Crates are added here incrementally as each is implemented and verified
+# green in CI, so `main` always builds. See docs/roadmap.md for the full
+# planned layout.
+members = [
+    "crates/chronicle-storage",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Yusra Faheem"]
+repository = "https://github.com/yf-2009/chronicle"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bincode = "1"
+crc32fast = "1"
+thiserror = "1"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+rand = "0.8"
+clap = { version = "4", features = ["derive"] }
+bytes = "1"
