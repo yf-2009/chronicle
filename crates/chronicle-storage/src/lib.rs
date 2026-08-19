@@ -2,6 +2,7 @@
 //!
 //! Built up incrementally, module by module -- see git history.
 
+pub mod bloom;
 pub mod error;
 pub mod memtable;
 pub mod wal;
