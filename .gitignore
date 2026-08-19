@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+Cargo.lock
+*.chronicle-data/
+.DS_Store
+*.log
+/data/
